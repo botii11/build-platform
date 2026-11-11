@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Фикс для полей ввода — чёрный текст на белом фоне */
+input,
+textarea,
+select {
+  color: #171717 !important;
+  background-color: #ffffff !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a8a29e !important;
+}
+
+/* Фикс для select в некоторых браузерах */
+select option {
+  color: #171717;
+  background-color: #ffffff;
+}
+
+/* Базовые стили body */
+body {
+  color: #171717;
+  background: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
